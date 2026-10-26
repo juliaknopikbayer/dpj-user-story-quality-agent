@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "work_package_id": "39119",
+    "subject": "Automated completeness check for user stories in DPJ",
+    "created_at": "2026-10-26 23:35:50",
+    "source_url": "/api/v3/work_packages/39119"
+  },
+  "overall": {
+    "overall_status": "Incomplete",
+    "message": "The User Story is incomplete because 2 required items are missing.",
+    "completed_items": [
+      "Acceptance Criteria",
+      "Acceptance Criteria quality",
+      "Business objective",
+      "Story Points",
+      "Assignee",
+      "Responsible / Accountable person"
+    ],
+    "missing_items": [
+      {
+        "field": "Epic or parent work item",
+        "reason": "The User Story does not have an assigned parent or Epic in the available hierarchy.",
+        "recommendation": "Assign the User Story to an Epic or link it to a parent work item."
+      },
+      {
+        "field": "Target Version or Sprint",
+        "reason": "The User Story has neither an assigned Target Version nor an assigned Sprint.",
+        "recommendation": "Assign either a Target Version or a Sprint to the User Story."
+      }
+    ],
+    "review_items": []
+  },
+  "validation_results": {
+    "acceptance_criteria": {
+      "status": "found",
+      "message": "Found 10 acceptance criteria.",
+      "heading": "## **AC:**",
+      "confidence": 100.0,
+      "criteria": [
+        "The agent can retrieve and evaluate the relevant fields of a selected DPJ user story.",
+        "The agent identifies whether acceptance criteria are available and meaningful.",
+        "The agent identifies whether an epic or parent work-item link is present.",
+        "The agent identifies whether the story objective or expected business value is documented.",
+        "The agent identifies whether story points are assigned.",
+        "The agent identifies whether a version or sprint number is assigned.",
+        "The agent identifies whether both an assignee and an accountable person are assigned.",
+        "The agent returns a structured result that distinguishes completed checks from missing information.",
+        "The agent provides actionable feedback for every missing mandatory field.",
+        "The agent marks a user story as Complete only if all required checks pass."
+      ],
+      "raw_content": "*   The agent can retrieve and evaluate the relevant fields of a selected DPJ user story.\n    \n*   The agent identifies whether acceptance criteria are available and meaningful.\n    \n*   The agent identifies whether an epic or parent work-item link is present.\n    \n*   The agent identifies whether the story objective or expected business value is documented.\n    \n*   The agent identifies whether story points are assigned.\n    \n*   The agent identifies whether a version or sprint number is assigned.\n    \n*   The agent identifies whether both an assignee and an accountable person are assigned.\n    \n*   The agent returns a structured result that distinguishes completed checks from missing information.\n    \n*   The agent provides actionable feedback for every missing mandatory field.\n    \n*   The agent marks a user story as Complete only if all required checks pass."
+    },
+    "acceptance_criteria_quality": {
+      "status": "found",
+      "message": "LLM assessed the quality of the Acceptance Criteria.",
+      "overall_quality": "valid",
+      "summary": "All acceptance criteria are relevant, testable, and sufficiently specific. They describe observable system behaviors that can be verified through testing or inspection of the agent's output.",
+      "criteria_assessment": [
+        {
+          "number": 1,
+          "criterion": "The agent can retrieve and evaluate the relevant fields of a selected DPJ user story.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        },
+        {
+          "number": 2,
+          "criterion": "The agent identifies whether acceptance criteria are available and meaningful.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        },
+        {
+          "number": 3,
+          "criterion": "The agent identifies whether an epic or parent work-item link is present.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        },
+        {
+          "number": 4,
+          "criterion": "The agent identifies whether the story objective or expected business value is documented.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        },
+        {
+          "number": 5,
+          "criterion": "The agent identifies whether story points are assigned.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        },
+        {
+          "number": 6,
+          "criterion": "The agent identifies whether a version or sprint number is assigned.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        },
+        {
+          "number": 7,
+          "criterion": "The agent identifies whether both an assignee and an accountable person are assigned.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        },
+        {
+          "number": 8,
+          "criterion": "The agent returns a structured result that distinguishes completed checks from missing information.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        },
+        {
+          "number": 9,
+          "criterion": "The agent provides actionable feedback for every missing mandatory field.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        },
+        {
+          "number": 10,
+          "criterion": "The agent marks a user story as Complete only if all required checks pass.",
+          "status": "valid",
+          "relevant_to_story": true,
+          "testable": true,
+          "issues": [],
+          "recommendation": ""
+        }
+      ]
+    },
+    "business_objective": {
+      "status": "found",
+      "message": "The business objective assessment was performed by the LLM.",
+      "objective_found": true,
+      "business_value_found": true,
+      "expected_outcome_found": true,
+      "summary": "The User Story clearly states the intended objective (to review user-story details and identify incomplete stories before sprint planning), the business value (enabling team members to improve story quality efficiently), and the expected outcome (incomplete or insufficiently defined stories are identified).",
+      "evidence": [
+        "I want an agent that reviews user-story details in the DPJ application, so that incomplete or insufficiently defined stories are identified before they enter sprint planning or development.",
+        "enabling the responsible team members to improve story quality efficiently",
+        "The agent shall clearly show which details are present, missing, or require attention"
+      ],
+      "recommendation": ""
+    },
+    "epic": {
+      "status": "missing",
+      "message": "The User Story has neither an assigned parent work item nor an Epic in the hierarchy.",
+      "relationship_type": null,
+      "parent": null,
+      "epic": null,
+      "checked_ancestors": []
+    },
+    "hierarchy": {
+      "status": "missing",
+      "message": "The User Story does not have an assigned parent or Epic in the available hierarchy.",
+      "has_parent": false,
+      "parent": null,
+      "ancestors": []
+    },
+    "story_points": {
+      "status": "found",
+      "message": "The User Story has Story Points assigned: 3.",
+      "story_points": 3
+    },
+    "target_version": {
+      "status": "missing",
+      "message": "The User Story does not have an assigned Target Version.",
+      "version": null
+    },
+    "sprint": {
+      "status": "missing",
+      "message": "The User Story does not have an assigned Sprint.",
+      "sprint": null
+    },
+    "assignee": {
+      "status": "found",
+      "message": "The User Story has an assigned Assignee: Julia Knopik.",
+      "assignee": {
+        "name": "Julia Knopik",
+        "href": "/api/v3/users/1210"
+      }
+    },
+    "responsible": {
+      "status": "found",
+      "message": "The User Story has an assigned responsible person: Michal Hejza.",
+      "responsible": {
+        "name": "Michal Hejza",
+        "href": "/api/v3/users/481"
+      }
+    }
+  },
+  "recommendations": {
+    "status": "not_needed",
+    "message": "No LLM content suggestions are needed. The User Story description and Acceptance Criteria are sufficient.",
+    "summary": "No description or Acceptance Criteria changes are required.",
+    "suggested_description": null,
+    "suggested_acceptance_criteria": []
+  }
+}
